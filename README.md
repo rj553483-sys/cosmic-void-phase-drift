@@ -22,17 +22,10 @@ We isolate and analyze localized velocity shear and kinematic boundary condition
 * **Triaxial Anisotropy**: Extreme principal shear tensor ratios ($\lambda_1/\lambda_3$ up to $122.3$ locally and $418.26$ in DESI LRG shells) confirmed via 10,000-iteration Monte Carlo noise-injection tests ($p < 0.0001$) to be physical rather than measurement noise artifacts.
 
 ---
+## 🚀 Reproduction Pipeline
 
-## 📦 Installation & Setup
+To reproduce all numerical calculations, run the 10,000-iteration Monte Carlo noise simulation, and generate all 9 manuscript figures:
 
 ```bash
-# Clone the repository
-git clone [https://github.com/rj553483-sys/cosmic-void-phase-drift.git](https://github.com/rj553483-sys/cosmic-void-phase-drift.git)
-cd cosmic-void-phase-drift
-
-# Create and activate virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install required dependencies
-pip install -r requirements.txt
+python src/reproduce_all.py
+```
