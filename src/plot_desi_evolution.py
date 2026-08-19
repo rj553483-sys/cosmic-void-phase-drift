@@ -20,8 +20,8 @@ plt.axhline(y=np.pi / 2, color="black", linestyle="--", label=r"Isotropic Baseli
 plt.axhline(y=1.40, color="crimson", linestyle=":", label=r"CF4 Weighted Mean ($1.40$)")
 
 # Data points
-plt.scatter(cf4_dist, cf4_phid, color="royalblue", alpha=0.8, s=50, label=r"CF4 Local Voids ($z \le 0.05$)")
-plt.scatter(desi_dist, desi_phid, color="darkmagenta", alpha=0.85, s=90, edgecolors="black", label=r"DESI High-Z Voids ($z \le 0.5$)")
+plt.scatter(cf4_dist, cf4_phid, color="royalblue", alpha=0.8, s=50, label=r"CF4 Local Voids ($z \leq 0.05$)")
+plt.scatter(desi_dist, desi_phid, color="darkmagenta", alpha=0.85, s=90, edgecolors="black", label=r"DESI High-Z Voids ($z \leq 0.5$)")
 
 plt.title("Evolution of Cosmic Void Boundary Phase-Drift: CF4 to DESI Scale", fontsize=12, fontweight="bold")
 plt.xlabel("Comoving Distance (Mpc)", fontsize=11)
